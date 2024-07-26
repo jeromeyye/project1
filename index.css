@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.score-counter {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.start-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    gap: 10px;
+}
+
+.game-block {
+    width: 200px;
+    height: 200px;
+    border: 2px solid brown;
+    border-radius: 50%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mole,
+.snake {
+    width: 100px;
+    height: 100px;
+}
+
+.timer {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+}

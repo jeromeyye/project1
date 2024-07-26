@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Whack-a-Mole</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+<body>
+    <div class="timer">
+        <div>Time Left</div>
+        <div id="time">30</div>
+    </div>
+    <div class="header">
+        <div class="header-title">Welcome to whack-a-mole</div>
+        <div class="score-counter">Let's Go, your total score is <span id="score">0</span></div>
+        <button class="start-button" onclick="startGame()">Start Game!</button>
+    </div>
+    <div class="game-board" id="gameBoard">
+    </div>
+    <script src="gameModel.js"></script>
+    <script src="gameView.js"></script>
+    <script src="gameController.js"></script>
+</body>
+</html>
